@@ -7,6 +7,7 @@
         "typeName": "heartrate",
         "typeMatchExpression": "$..[?(@heartRate)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -23,6 +24,7 @@
         "typeName": "steps",
         "typeMatchExpression": "$..[?(@stepCount)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -39,6 +41,7 @@
         "typeName": "bloodpressure",
         "typeMatchExpression": "$..[?(@systolic && @diastolic)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.measurementdatetime",
         "values": [
           {
@@ -60,6 +63,7 @@
         "typeName": "glucose",
         "typeMatchExpression": "$..[?(@bloodGlucose)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -73,9 +77,27 @@
     {
       "templateType": "JsonPathContent",
       "template": {
+        "typeName": "insulin",
+        "typeMatchExpression": "$..[?(@insulinDelivery)]",
+        "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
+        "timestampExpression": "$.endDate",
+        "values": [
+          {
+            "required": "true",
+            "valueExpression": "$.insulinDelivery",
+            "valueName": "insulin"
+          }
+        ]
+      }
+    },
+    {
+      "templateType": "JsonPathContent",
+      "template": {
         "typeName": "height",
         "typeMatchExpression": "$..[?(@height)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -92,6 +114,7 @@
         "typeName": "bodyMass",
         "typeMatchExpression": "$..[?(@bodyMass)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -108,6 +131,7 @@
         "typeName": "bodyTemperature",
         "typeMatchExpression": "$..[?(@bodyTemperature)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -124,6 +148,7 @@
         "typeName": "oxygenSaturation",
         "typeMatchExpression": "$..[?(@oxygenSaturation)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -140,6 +165,7 @@
         "typeName": "respiratoryRate",
         "typeMatchExpression": "$..[?(@respiratoryRate)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -156,6 +182,7 @@
         "typeName": "activeEnergyBurned",
         "typeMatchExpression": "$..[?(@activeEnergyBurned)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -172,6 +199,7 @@
         "typeName": "appleExerciseTime",
         "typeMatchExpression": "$..[?(@appleExerciseTime)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -188,6 +216,7 @@
         "typeName": "appleStandTime",
         "typeMatchExpression": "$..[?(@appleStandTime)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -204,6 +233,7 @@
         "typeName": "dietaryEnergyConsumed",
         "typeMatchExpression": "$..[?(@dietaryEnergyConsumed)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -220,6 +250,7 @@
         "typeName": "environmentalAudioExposure",
         "typeMatchExpression": "$..[?(@environmentalAudioExposure)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -236,6 +267,7 @@
         "typeName": "heartRateVariability",
         "typeMatchExpression": "$..[?(@heartRateVariability)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -252,6 +284,7 @@
         "typeName": "restingHeartRate",
         "typeMatchExpression": "$..[?(@restingHeartRate)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {
@@ -268,6 +301,7 @@
         "typeName": "walkingHeartRateAverage",
         "typeMatchExpression": "$..[?(@walkingHeartRateAverage)]",
         "deviceIdExpression": "$.deviceId",
+        "patientIdExpression": "$.patientId",
         "timestampExpression": "$.endDate",
         "values": [
           {

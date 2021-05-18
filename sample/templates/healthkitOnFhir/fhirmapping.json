@@ -81,6 +81,31 @@
             "template": {
                 "codes": [
                     {
+                        "code": "20448-7",
+                        "system": "http://loinc.org",
+                        "display": "Insulin in Serum or Plasma"
+                    },
+                    {
+                        "system": "com.apple.health",
+                        "code": "HKQuantityTypeIdentifierInsulinDelivery",
+                        "display": "The amount of insulin delivered"
+                    }
+                ],
+                "periodInterval": 60,
+                "typeName": "insulin",
+                "value": {
+                    "defaultPeriod": 5000,
+                    "unit": "u",
+                    "valueName": "insulin",
+                    "valueType": "SampledData"
+                }
+            }
+        },
+        {
+            "templateType": "CodeValueFhir",
+            "template": {
+                "codes": [
+                    {
                         "system": "http://loinc.org",
                         "code": "2708-6",
                         "display": "Oxygen saturation in Arterial blood"
