@@ -16,7 +16,7 @@
                         "display": "Heart rate"
                     }
                 ],
-                "periodInterval": 60,
+                "periodInterval": 0,
                 "typeName": "heartrate",
                 "value": {
                     "defaultPeriod": 5000,
@@ -66,7 +66,7 @@
                         "display": "Glucose Glucometer (BldC) [Mass/Vol]"
                     }
                 ],
-                "periodInterval": 60,
+                "periodInterval": 0,
                 "typeName": "glucose",
                 "value": {
                     "defaultPeriod": 5000,
@@ -91,7 +91,7 @@
                         "display": "The amount of insulin delivered"
                     }
                 ],
-                "periodInterval": 60,
+                "periodInterval": 0,
                 "typeName": "insulin",
                 "value": {
                     "defaultPeriod": 5000,
